@@ -1,19 +1,24 @@
 /*
+Joel Barrera
+Ejercicio 6*/
+/*
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
-	let num1;
-	let num2;
+	let numero1;
+	let numero2;
 	let resultado;
+	let mensajeMostrar;
 
-	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 
-	resultado = num1 + num2;
+	resultado = numero1 + numero2;
 
-	alert("La suma es " + resultado);
+	mensajeMostrar = "La suma es " + resultado;
+
+	alert(mensajeMostrar);
 }
-

@@ -1,12 +1,29 @@
 /*
+Joel Barrera
+Ejercicio WHILE 5 */
+/*
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	let sexoIngresado;
+	
+	do{
+		sexoIngresado = prompt("Ingrese un sexo");
+	}while(sexoIngresado != "f" && sexoIngresado != "m");
+
+	document.getElementById("txtIdSexo").value = sexoIngresado;
+	
+}
 
 
+//While
+	/*
+	sexoIngresado = prompt("Ingrese su sexo. f (femenino) m (masculino)");
 
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	while(sexoIngresado != "f" && sexoIngresado != "m"){
+			sexoIngresado = prompt("Ingrese de nuevo su sexo");
+	}
+
+	document.getElementById("txtIdSexo").value = sexoIngresado;
+	*/

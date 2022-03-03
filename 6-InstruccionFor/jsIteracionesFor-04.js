@@ -1,7 +1,18 @@
+/*
+Joel Barrera
+Ejercicio FOR 4 */
+// al presionar el botón repetir hasta que utilizamos 'BREAK'.
 function mostrar()
 {
-	alert("ok");
+	let repeticiones;
+	let i;
 
+	repeticiones = parseInt(prompt("Ingrese un numero de repeticiones"));
 
-
-}//FIN DE LA FUNCIÓN
+	for(i = 0; i < repeticiones; i++){
+		if (i == 3) {
+			break;
+		}
+		console.log(i);
+	}
+}
